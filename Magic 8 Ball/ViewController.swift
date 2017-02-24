@@ -14,10 +14,6 @@ class ViewController: UIViewController {
     
     var randomBallNumber : Int = 0
     
-    
-    //arc4random_uniform(5)
-    
-    
     @IBOutlet weak var imageView: UIImageView!
     @IBAction func buttonPressed(_ sender: Any) {
         
@@ -38,7 +34,7 @@ class ViewController: UIViewController {
 
     
     func newBallImage() {//function generating a random number between 0 and 4 and then triggering a new image to be displayed
-        randomBallNumber = Int(arc4random_uniform(4))
+        randomBallNumber = Int(arc4random_uniform(5))
         imageView.image = ballArray[randomBallNumber]
     }
     
